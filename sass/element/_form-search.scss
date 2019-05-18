@@ -1,0 +1,18 @@
+.e-form-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid $primary;
+  height: pxTorem(32px);
+
+  input[type='text'] {
+    flex: 1;
+    padding: pxTorem(4px);
+  }
+  button {
+    @include content-center;
+    background-color: $primary;
+    width: pxTorem(36px);
+    height: 100%;
+    color: white;
+  }
+}

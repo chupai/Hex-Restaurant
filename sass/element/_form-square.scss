@@ -1,0 +1,22 @@
+.e-form-square {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  background-color: white;
+  width: 100%;
+  height: pxTorem(32px);
+
+  &__icon {
+    color: rgba($primary, 0.5);
+    padding: 0 pxTorem(9px);
+    border-radius: pxTorem(3px);
+  }
+
+  &__input {
+    background-color: transparent;
+    flex: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+}

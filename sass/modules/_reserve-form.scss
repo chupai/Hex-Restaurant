@@ -1,0 +1,62 @@
+.m-reserve-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__label {
+    margin-bottom: pxTorem(6px);
+    font-size: $font-s;
+  }
+  &__input {
+    border: 1px solid #cccccc;
+    border-radius: pxTorem(3px);
+    background-color: white;
+    margin-bottom: pxTorem(17px);
+    padding: pxTorem(5px) pxTorem(14px);
+    width: 100%;
+    height: pxTorem(32px);
+    &:focus {
+      outline: none;
+      box-shadow: pxTorem(1px) pxTorem(1px) pxTorem(4px) rgba(black, 0.4);
+    }
+  }
+  &__radios {
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio'] + label {
+      position: relative;
+      padding-right: pxTorem(60px);
+      cursor: pointer;
+      &::before,
+      &::after {
+        content: '';
+        @include container-center;
+        border-radius: 50%;
+      }
+      &::before {
+        background: #e0e0e0;
+        @include size(20px);
+      }
+      &::after {
+        display: none;
+        @include size(9px);
+        background: #1565c0;
+      }
+    }
+    input[type='radio']:checked + label {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    .e-btn {
+      margin-left: pxTorem(12px);
+    }
+  }
+}

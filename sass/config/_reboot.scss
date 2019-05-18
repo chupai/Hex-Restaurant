@@ -1,0 +1,90 @@
+// Reboot
+//
+//
+
+//
+// Document
+//
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  transition: 0.5s all;
+  font-size: $browser-default-font-size;
+}
+
+//
+// Body
+//
+body {
+  background-color: $secondary;
+  color: $primary;
+  font-family: $NotoSansTC;
+  font-size: $base-font-size;
+  font-weight: $font-weight-light;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+}
+
+//
+// Headings and paragraphs
+//
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-medium;
+}
+
+h1 {
+  letter-spacing: $lsp-xxl;
+  font-size: $font-xxl;
+}
+h2 {
+  letter-spacing: $lsp-xl;
+  font-size: $font-xl;
+}
+h3 {
+  letter-spacing: $lsp-l;
+  font-size: $font-l;
+}
+h4 {
+  letter-spacing: $lsp-m;
+  font-size: $font-m;
+}
+h5 {
+  letter-spacing: $lsp-b;
+  font-size: $font-b;
+}
+h6 {
+  letter-spacing: $lsp-s;
+  font-size: $font-s;
+}
+
+//
+// Links
+//
+a {
+  text-decoration: none;
+  color: $primary;
+  &:hover {
+    color: $success;
+  }
+}
+
+//
+// forms
+//
+
+input,
+label,
+select,
+button,
+textarea {
+  font-family: $NotoSansTC;
+}

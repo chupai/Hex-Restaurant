@@ -1,0 +1,66 @@
+//
+// 特色
+//
+.p-feature {
+  &__title {
+    position: relative;
+    padding: 0 pxTorem(16px);
+    text-align: center;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-top: 1px solid $primary;
+      width: pxTorem(125px);
+      pointer-events: none;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+    &::before {
+      right: 100%;
+    }
+    &::after {
+      left: 100%;
+    }
+  }
+}
+//
+// 主廚
+//
+.p-chef {
+  &__img {
+    @include bg-cover;
+    height: pxTorem(460px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include full;
+  }
+}
+
+//
+// 評論
+//
+.p-comments {
+  &__comment {
+    display: flex;
+  }
+  &__comment-text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__comment-title {
+    height: pxTorem(67px);
+    line-height: pxTorem(67px);
+  }
+
+  &__e-img {
+    margin-right: pxTorem(12px);
+    @include size(67px);
+  }
+}

@@ -1,0 +1,15 @@
+.m-member-form {
+  border-top: 3px solid $success;
+  padding: pxTorem(15px);
+  &__title {
+    font-weight: $font-weight-bold;
+    text-align: center;
+  }
+  &__label {
+    font-weight: $font-weight-regular;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

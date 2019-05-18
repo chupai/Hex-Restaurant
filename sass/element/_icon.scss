@@ -1,0 +1,31 @@
+.e-icon {
+  color: white;
+  &_facebook {
+    color: #3a5795;
+  }
+  &_twitter {
+    color: #41abe1;
+  }
+  &_youtube {
+    color: #c4302b;
+  }
+
+  &_instagram {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+      -45deg,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d,
+      #f56040,
+      #f77737,
+      #fcaf45,
+      #ffdc80
+    );
+    color: transparent;
+  }
+}

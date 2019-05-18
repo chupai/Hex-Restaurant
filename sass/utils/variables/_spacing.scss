@@ -1,0 +1,37 @@
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 1,
+    ),
+    2: (
+      $spacer * 1.25,
+    ),
+    3: (
+      $spacer * 2,
+    ),
+    4: (
+      pxTorem(42px),
+    ),
+    5: (
+      $spacer * 3.125,
+    ),
+    6: (
+      $spacer * 3.75,
+    ),
+    7: (
+      $spacer * 4.375,
+    ),
+    8: (
+      pxTorem(84px),
+    ),
+    12: (
+      $spacer * 7.5,
+    ),
+  ),
+  $spacers
+);

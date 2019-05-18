@@ -1,0 +1,16 @@
+{
+  //Prettier 設定
+  // 儲存時自動格式化
+  "editor.formatOnSave": true,
+  // 使用單引號
+  "prettier.singleQuote": true,
+  // 結束是否加分號
+  "prettier.semi": false,
+  // 行寬
+  "prettier.printWidth": 80,
+  // 尾隨逗號
+  "prettier.trailingComma": "es5",
+  // 縮排空幾格
+  "prettier.tabWidth": 2,
+  "liveServer.settings.port": 5501
+}

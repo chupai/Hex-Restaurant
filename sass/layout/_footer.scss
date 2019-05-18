@@ -1,0 +1,16 @@
+.l-footer {
+  &__connection {
+    list-style-position: inside;
+  }
+  &__company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__social {
+    font-size: $font-xxl;
+  }
+  &__copyright {
+    font-size: $font-s;
+  }
+}

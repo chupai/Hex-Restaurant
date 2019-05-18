@@ -1,0 +1,144 @@
+$ribbon-size: pxTorem(75px);
+$ribbon-out-size: pxTorem(4px);
+$ribbon-color: #222;
+$ribbon__label-width: $ribbon-size * 1.45;
+
+.e-ribbon {
+  position: absolute;
+  overflow: hidden;
+  width: $ribbon-size;
+  height: $ribbon-size;
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border: $ribbon-out-size solid darken($ribbon-color, 10%);
+  }
+  &__label {
+    display: block;
+    position: absolute;
+    box-shadow: 0 pxTorem(5px) pxTorem(10px) rgba(black, 0.1);
+    background-color: $ribbon-color;
+    width: $ribbon__label-width;
+    padding: pxTorem(2px) 0;
+    color: white;
+    font-size: $font-s;
+    font-weight: $font-weight-medium;
+    text-align: center;
+  }
+
+  // 左上角
+  &_top-left {
+    top: -$ribbon-out-size;
+    left: -$ribbon-out-size;
+    &::before,
+    &::after {
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+    &::before {
+      top: 0;
+      right: 0;
+    }
+    &::after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &_top-left &__label {
+    bottom: 50%;
+    left: calc(50% - #{$ribbon__label-width/2});
+    transform: rotate(-45deg);
+    transform-origin: center bottom;
+  }
+
+  // 右上角
+  &_top-right {
+    top: -$ribbon-out-size;
+    right: -$ribbon-out-size;
+    &::before,
+    &::after {
+      border-top-color: transparent;
+      border-right-color: transparent;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &_top-right &__label {
+    bottom: 50%;
+    left: calc(50% - #{$ribbon__label-width/2});
+    transform: rotate(45deg);
+    transform-origin: center bottom;
+  }
+
+  // 左下角
+  &_bottom-left {
+    bottom: -$ribbon-out-size;
+    left: -$ribbon-out-size;
+    &::before,
+    &::after {
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+    }
+    &::before {
+      bottom: 0;
+      right: 0;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+    }
+  }
+  &_bottom-left &__label {
+    bottom: 50%;
+    right: calc(50% - #{$ribbon__label-width/2});
+    transform: rotate(225deg);
+    transform-origin: center bottom;
+  }
+
+  // 右下角
+  &_bottom-right {
+    bottom: -$ribbon-out-size;
+    right: -$ribbon-out-size;
+    &::before,
+    &::after {
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+    }
+    &::before {
+      bottom: 0;
+      left: 0;
+    }
+    &::after {
+      top: 0;
+      right: 0;
+    }
+  }
+  &_bottom-right &__label {
+    bottom: 50%;
+    left: calc(50% - #{$ribbon__label-width/2});
+    transform: rotate(-225deg);
+    transform-origin: center bottom;
+  }
+
+  // 顏色主題
+  @each $name, $value in $theme-color {
+    &_#{$name} {
+      &::before,
+      &::after {
+        border-color: darken($value, 10%);
+      }
+    }
+    &_#{$name} &__label {
+      background-color: $value;
+    }
+  }
+}

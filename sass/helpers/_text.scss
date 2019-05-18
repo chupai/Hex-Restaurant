@@ -1,0 +1,42 @@
+.h- {
+  &text-center {
+    text-align: center !important;
+  }
+  &text-right {
+    text-align: right !important;
+  }
+
+  &hide-text {
+    font-size: 0 !important;
+    color: transparent !important;
+    text-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+
+  &t1 {
+    letter-spacing: $lsp-xxl;
+    font-size: $font-xxl;
+  }
+  &t2 {
+    letter-spacing: $lsp-xl;
+    font-size: $font-xl;
+  }
+  &t3 {
+    letter-spacing: $lsp-l;
+    font-size: $font-l;
+  }
+  &t4 {
+    letter-spacing: $lsp-m;
+    font-size: $font-m;
+  }
+
+  &s1 {
+    letter-spacing: $lsp-s;
+    font-size: $font-s;
+  }
+  &s2 {
+    letter-spacing: $lsp-es;
+    font-size: $font-es;
+  }
+}

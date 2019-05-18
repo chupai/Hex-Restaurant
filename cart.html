@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>六角西餐廳</title>
+    <meta property="og:title" content="六角西餐廳" />
+    <meta property="og:description" content="六角學院的餐廳" />
+    <meta property="og:site_name" content="六角西餐廳" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/all.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 頁首 start -->
+    <header>
+      <nav class="m-navbar m-navbar_abs_top js-m-navbar">
+        <div class="container px-xl-4">
+          <h1 class="h-hide-text">
+            <a
+              class="e-brand"
+              style="background-image: url('/img/logo_w@svg.svg')"
+              href="index.html"
+            ></a
+            >六角西餐廳
+          </h1>
+          <ul class="m-navbar__list js-m-navbar__list">
+            <li>
+              <a class="m-navbar__link" href="/index.html"
+                ><i class="fas fa-home"></i>首頁</a
+              >
+            </li>
+            <li>
+              <a class="m-navbar__link" href="/cart.html"
+                ><i class="fas fa-shopping-cart"></i>線上訂購</a
+              >
+            </li>
+            <li>
+              <a class="m-navbar__link" href="/login.html"
+                ><i class="fas fa-user"></i>登入會員</a
+              >
+            </li>
+          </ul>
+          <div class="m-navbar__button js-m-navbar__button">
+            <div class="m-navbar__button-open"></div>
+            <div class="m-navbar__button-close"></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="m-hero">
+        <div class="container px-0">
+          <div class="m-hero__bg">
+            <div class="m-hero__content">
+              <h2 class="m-hero__title h-t1">
+                咬一口就無法忘懷的漢堡
+              </h2>
+              <p>七夕絕對無法錯過的好滋味<br /></p>
+              <span>
+                <i class="fas fa-utensils"></i>
+                六角大漢堡
+                <i class="fas fa-utensils"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 頁首 end -->
+    <!-- 購物車 start -->
+    <section>
+      <div class="container px-md-4">
+        <div class="row">
+          <!-- 購物選單 start-->
+          <div class="col-xl-3 mt-5">
+            <nav class="m-carts-menu">
+              <h3 class="m-carts-menu__title">
+                <img
+                  class="e-img m-carts-menu__e-img"
+                  src="/img/cart_icon.png"
+                  alt=""
+                />線上訂購美食
+              </h3>
+              <ul class="m-carts-menu__list">
+                <li>
+                  <a class="m-carts-menu__link" href=""
+                    >所有品項<span>（23）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link" href=""
+                    >拿著走<span>（15）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link" href=""
+                    >加熱就可食<span>（1）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link is--active" href=""
+                    >西餐廳的速食<span>（4）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link" href=""
+                    >飲料<span>（2）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link" href=""
+                    >本店招牌<span>（3）</span></a
+                  >
+                </li>
+                <li>
+                  <a class="m-carts-menu__link is--disabled" href=""
+                    >限時販售<span>（4）</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- 購物選單 end-->
+          <!-- 購物主頁 start-->
+          <div class="col-xl-9  mt-5">
+            <div class="row ">
+              <!-- 搜尋欄 start-->
+              <div class="col-12 col-xl-8 mb-1 ">
+                <div class="e-form-search">
+                  <input type="text" placeholder="商品搜尋..." />
+                  <button><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+              <!-- 搜尋欄 end-->
+              <!-- 購物車 start-->
+              <div class="col-12 col-xl-4 mb-1">
+                <div class="m-buy">
+                  <a class="m-buy__link" href="#">結帳去</a>
+                  |
+                  <a class="m-buy__link h-t2" href="#"
+                    ><i class="fas fa-shopping-cart" data-quantity="1"></i>
+                    <span class="m-buy__number">2</span>
+                  </a>
+                </div>
+              </div>
+              <!-- 購物車 end-->
+            </div>
+
+            <!-- 購物欄 start-->
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="m-card h-shadow mx-auto mb-3">
+                  <div class="e-like">
+                    <input type="checkbox" id="heart1" />
+                    <label for="heart1"></label>
+                  </div>
+                  <div class="e-ribbon e-ribbon_top-right e-ribbon_danger">
+                    <div class="e-ribbon__label">熱銷美食</div>
+                  </div>
+                  <img
+                    class="m-card__img"
+                    src="/img/product_1_desktop.png"
+                    alt=""
+                  />
+                  <div class="m-card__body">
+                    <h3 class="m-card__title">
+                      經典漢堡套餐
+                    </h3>
+                    <span class="m-card__sub-title"
+                      >Classic Hamburger Package</span
+                    >
+                    <div class="m-card__pric">120</div>
+                    <a class="m-card__button m-card__button_success" href=""
+                      ><i class="fas fa-shopping-cart" data-quantity="1"></i
+                      >加入購物車</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="m-card h-shadow mx-auto">
+                  <div class="e-like">
+                    <input type="checkbox" id="heart2" />
+                    <label for="heart2"></label>
+                  </div>
+                  <img
+                    class="m-card__img"
+                    src="/img/product_2_desktop.png"
+                    alt=""
+                  />
+                  <div class="m-card__body">
+                    <h3 class="m-card__title">
+                      英俊香腸
+                    </h3>
+                    <span class="m-card__sub-title"
+                      >Classic Hamburger Package</span
+                    >
+                    <div class="m-card__pric">1024</div>
+                    <a class="m-card__button m-card__button_success" href=""
+                      ><i class="fas fa-shopping-cart" data-quantity="1"></i
+                      >加入購物車</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="m-card h-shadow mx-auto">
+                  <div class="e-like">
+                    <input type="checkbox" id="heart3" />
+                    <label for="heart3"></label>
+                  </div>
+                  <img
+                    class="m-card__img"
+                    src="/img/product_3_desktop.png"
+                    alt=""
+                  />
+                  <div class="m-card__body">
+                    <h3 class="m-card__title">
+                      漢堡兄弟
+                    </h3>
+                    <span class="m-card__sub-title"
+                      >Classic Hamburger Package</span
+                    >
+                    <div class="m-card__pric">792</div>
+                    <a class="m-card__button m-card__button_success" href=""
+                      ><i class="fas fa-shopping-cart" data-quantity="1"></i
+                      >加入購物車</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="m-card h-shadow mx-auto">
+                  <div class="e-like">
+                    <input type="checkbox" id="heart4" />
+                    <label for="heart4"></label>
+                  </div>
+                  <div class="e-ribbon e-ribbon_top-right e-ribbon_info">
+                    <div class="e-ribbon__label">新品上市</div>
+                  </div>
+                  <img
+                    class="m-card__img"
+                    src="/img/product_4_desktop.png"
+                    alt=""
+                  />
+                  <div class="m-card__body">
+                    <h3 class="m-card__title">
+                      完美願望
+                    </h3>
+                    <span class="m-card__sub-title"
+                      >Classic Hamburger Package</span
+                    >
+                    <div class="m-card__pric">999,999</div>
+                    <a class="m-card__button m-card__button_success" href=""
+                      ><i class="fas fa-shopping-cart" data-quantity="1"></i
+                      >加入購物車</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 購物欄 end-->
+          </div>
+          <!-- 購物主頁 end-->
+        </div>
+      </div>
+    </section>
+    <!-- 購物車 end -->
+
+    <!-- 頁腳 start -->
+    <footer class="l-footer pt-5 pb-1">
+      <div class="container px-md-4">
+        <div class="row">
+          <div class="col-xl-4 mb-3 mb-xl-0">
+            <h2 class="mb-1">關於 六角西餐廳</h2>
+            <p>
+              Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
+              Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+            </p>
+          </div>
+          <div class="col-xl-4 mb-3 mb-xl-0">
+            <h2 class="mb-1">聯絡方式</h2>
+            <ul class="l-footer__connection">
+              <li>高雄市中正五路到底</li>
+              <li>+886 886 886</li>
+              <li>service@hexschool.com</li>
+            </ul>
+          </div>
+          <div class="col-xl-4 mb-3 mb-xl-0 ">
+            <div class="l-footer__company">
+              <h1 class="h-hide-text mb-2">
+                <a
+                  class="e-brand e-brand_size_lg"
+                  href="index.html"
+                  style="background-image: url('/img/logo_l@svg.svg')"
+                  >六角西餐廳</a
+                >
+              </h1>
+              <div class="l-footer__social">
+                <a href="#"
+                  ><i class="e-icon e-icon_facebook fab fa-facebook-square"></i
+                ></a>
+                <a href="#"
+                  ><i class="e-icon e-icon_twitter fab fa-twitter-square"></i
+                ></a>
+                <a href="#"
+                  ><i class="e-icon e-icon_youtube fab fa-youtube-square"></i
+                ></a>
+                <a href="#"
+                  ><i class="e-icon e-icon_instagram fab fa-instagram "></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="l-footer__copyright mx-auto">
+            <p class="h-text-center">
+              Copyright © 六角西餐廳 │
+              <a
+                href="https://hexschool.github.io/Rwd_sketch_export/"
+                target="blank"
+                >設計稿</a
+              >
+              │
+              <a href="https://chupainotebook.blogspot.com/" target="blank"
+                >竹白切版練習</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 頁腳 end -->
+    <!-- 至頂按鈕 start-->
+    <div class="e-backtop-btn js-e-backtop-btn">
+      <i class="fas fa-arrow-up"> </i>
+      <span>TOP</span>
+    </div>
+    <!-- 至頂按鈕 end-->
+  </body>
+  <script src="/js/all.js"></script>
+</html>

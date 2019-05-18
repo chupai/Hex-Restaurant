@@ -1,0 +1,24 @@
+// breakpoints
+$moblile: 576px;
+$tablets: 768px;
+$desktops: 1024px;
+
+// Grid columns
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: $moblile,
+  md: $tablets,
+  xl: $desktops,
+) !default;
+
+// Grid containers
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  xl: $desktops,
+) !default;

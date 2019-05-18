@@ -1,0 +1,15 @@
+.h- {
+  @each $name, $value in $theme-color {
+    &bg-#{$name} {
+      background-color: $value !important;
+    }
+  }
+}
+
+.h- {
+  @each $name, $value in $theme-color {
+    &text-#{$name} {
+      color: $value !important;
+    }
+  }
+}

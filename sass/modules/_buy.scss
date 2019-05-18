@@ -1,0 +1,32 @@
+.m-buy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: pxTorem(32px);
+
+  &__link {
+    position: relative;
+    @include content-center;
+    transition: 0.5s;
+    padding: 0 pxTorem(10px);
+    height: 100%;
+    &:hover {
+      transform: scale(1.1);
+      color: inherit;
+    }
+  }
+
+  &__number {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include content-center;
+    border-radius: 50%;
+    background-color: $success;
+    @include size(15px);
+    color: white;
+    font-size: $lsp-s;
+    font-family: $Roboto;
+  }
+}

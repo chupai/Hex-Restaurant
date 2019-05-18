@@ -1,0 +1,87 @@
+.m-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: pxTorem(300px);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: pxTorem(10px);
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 100%;
+    height: pxTorem(120px);
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $font-l;
+  }
+
+  &__sub-title {
+    display: block;
+    position: relative;
+    font-size: $font-es;
+    font-weight: $font-weight-regular;
+    text-align: center;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: pxTorem(-8px);
+      transform: translateX(-50%);
+      border-top: 1px solid $primary;
+      width: 90px;
+    }
+  }
+
+  &__pric {
+    margin-top: pxTorem(20px);
+    margin-bottom: pxTorem(13px);
+    text-align: center;
+    font-family: $Roboto;
+    font-size: $font-l;
+    font-weight: $font-weight-bold;
+    font-style: italic;
+    &::before {
+      content: '$';
+      font-style: normal;
+    }
+  }
+
+  &__button {
+    flex: 1;
+    transition: 0.5s;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    padding: pxTorem(3px) 0;
+    line-height: 1;
+    text-align: center;
+    &:hover {
+      background-color: #eee;
+    }
+    > i {
+      padding-right: pxTorem(9px);
+    }
+    @each $name, $value in $theme-color {
+      &_#{$name} {
+        color: $value;
+        border-color: $value;
+        &:hover {
+          background-color: $value;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$(document).ready(function() {
+  // 導覽列按鈕
+  $('.js-m-navbar__button').on('click', function(e) {
+    $('.js-m-navbar__button').toggleClass('is_active')
+    $('.js-m-navbar__list').toggleClass('is_activ')
+    e.preventDefault()
+  })
+  // 導覽列按鈕 end
+
+  // 固定導覽列
+  const setFixed = $('.js-m-navbar')
+  let menuTop = setFixed.offset().top
+
+  $(window).on('load scroll resize', function() {
+    if ($(window).scrollTop() > menuTop) {
+      setFixed.addClass('is_fix_top')
+    } else {
+      setFixed.removeClass('is_fix_top')
+    }
+  })
+  // 固定導覽列 end
+
+  // 至頂按鈕
+  $('.js-e-backtop-btn').on('click', function() {
+    $('html,body').animate({ scrollTop: 0 }, 'slow')
+    return false
+  })
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('.js-e-backtop-btn').fadeIn()
+    } else {
+      $('.js-e-backtop-btn').fadeOut()
+    }
+  })
+  // 至頂按鈕 end
+})

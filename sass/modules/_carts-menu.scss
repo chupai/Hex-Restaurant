@@ -1,0 +1,35 @@
+.m-carts-menu {
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: pxTorem(16px);
+  }
+
+  &__e-img {
+    @include size(26px, 32px);
+    margin-right: pxTorem(15px);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    border-bottom: 1px solid $primary;
+    padding: pxTorem(8px);
+    &:hover {
+      background-color: rgba($primary, 0.8);
+      color: white;
+    }
+
+    &:active,
+    &.is--active {
+      background-color: $primary;
+      color: white;
+    }
+
+    &.is--disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}

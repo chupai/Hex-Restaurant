@@ -1,0 +1,26 @@
+.e-btn {
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #eee;
+  padding: pxTorem(6px) pxTorem(16px);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: pxTorem(1px) pxTorem(1px) pxTorem(4px) rgba(black, 0.4);
+    color: white;
+  }
+
+  // 顏色樣式
+  @each $name, $value in $theme-color {
+    &_#{$name} {
+      background-color: $value;
+    }
+  }
+
+  // 寬樣式
+  &_w_lg {
+    width: pxTorem(125px);
+  }
+}

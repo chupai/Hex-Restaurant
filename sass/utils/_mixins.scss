@@ -1,0 +1,58 @@
+// 背景填滿置中
+@mixin bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+// 背景圖片失效預設顏色 (透明圖片不可使用)
+@mixin bg-img($color, $url) {
+  background-color: $color;
+  background-image: url($url);
+}
+
+// 尺寸
+@mixin size($w, $h: $w) {
+  width: pxTorem($w);
+  height: pxTorem($h);
+}
+
+// 塞滿
+@mixin full {
+  width: 100%;
+  height: 100%;
+}
+
+// 容器水平垂直置中
+@mixin container-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 內容垂直置中
+@mixin content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 自訂 col 間距
+@mixin col-gutters($gutters) {
+  $guttersTorem: pxTorem($gutters);
+
+  .row {
+    margin-right: -($guttersTorem/2);
+    margin-left: -($guttersTorem/2);
+  }
+  [class^='col'] {
+    padding-right: ($guttersTorem/2);
+    padding-left: ($guttersTorem/2);
+  }
+}
+
+// 圓形
+@mixin circle {
+  border-radius: 50%;
+}

@@ -1,0 +1,54 @@
+$hero-img_desktop: '/img/header_desktop.png';
+$hero-img_mobile: '/img/header_mobile.png';
+
+$hero-height: pxTorem(420px);
+.m-hero {
+  position: relative;
+  overflow: hidden;
+
+  // 模糊背景
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &::before {
+    z-index: -1;
+    @include bg-img(black, $hero-img_desktop);
+    @include bg-cover;
+    filter: blur(15px);
+  }
+  &::after {
+    z-index: -21;
+    background-color: black;
+  }
+
+  // 背景
+  &__bg {
+    @include bg-img(black, $hero-img_desktop);
+    @include bg-cover;
+    height: $hero-height;
+    @include media-breakpoint-down(sm) {
+      @include bg-img(black, $hero-img_mobile);
+    }
+  }
+
+  // 文本內容
+  &__content {
+    @include container-center;
+    background-color: rgba(black, 0.35);
+    padding: pxTorem(20px);
+    min-width: pxTorem(300px);
+    color: white;
+    text-align: center;
+  }
+
+  // 標題
+  &__title {
+    margin-bottom: pxTorem(16px);
+  }
+}

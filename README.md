@@ -3,7 +3,8 @@
 ## 位置
 
 - 網頁：https://chupai.github.io/Hex-Restaurant/
-- Gith：https://github.com/chupai/Hex-Restaurant
+- Github：https://github.com/chupai/Hex-Restaurant
+- 設計稿：https://hexschool.github.io/Rwd_sketch_export/
 
 ## CSS 排序
 

@@ -4812,7 +4812,7 @@ html {
 .m-hero::before {
   z-index: -1;
   background-color: black;
-  background-image: url("/img/header_desktop.png");
+  background-image: url("../img/header_desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4827,7 +4827,7 @@ html {
 
 .m-hero__bg {
   background-color: black;
-  background-image: url("/img/header_desktop.png");
+  background-image: url("../img/header_desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4837,7 +4837,7 @@ html {
 @media (max-width: 767.98px) {
   .m-hero__bg {
     background-color: black;
-    background-image: url("/img/header_mobile.png");
+    background-image: url("../img/header_mobile.png");
   }
 }
 

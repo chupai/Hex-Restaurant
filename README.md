@@ -12,11 +12,11 @@
 ## 命名規範
 
 - 前綴
-- `l-` layout
-- `m-` modules
-- `e-` element
-- `p-` pages
-- `h-` helpers
+  - `l-` layout
+  - `m-` modules
+  - `e-` element
+  - `p-` pages
+  - `h-` helpers
 - BEM
   - `Block__Element_Modifier`
 

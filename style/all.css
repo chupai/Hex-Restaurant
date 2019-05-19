@@ -4788,10 +4788,10 @@ html {
           align-items: center;
   border-radius: 50%;
   background-color: #ff5e45;
-  width: 0.9375rem;
-  height: 0.9375rem;
+  width: 1rem;
+  height: 1rem;
   color: white;
-  font-size: 0.064rem;
+  font-size: 0.08rem;
   font-family: "Roboto", sans-serif;
 }
 

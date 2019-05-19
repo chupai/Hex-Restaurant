@@ -24,9 +24,9 @@
     @include content-center;
     border-radius: 50%;
     background-color: $success;
-    @include size(15px);
+    @include size(16px);
     color: white;
-    font-size: $lsp-s;
+    font-size: $lsp-b;
     font-family: $Roboto;
   }
 }

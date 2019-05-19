@@ -16,6 +16,7 @@ $ribbon__label-width: $ribbon-size * 1.45;
     z-index: -1;
     border: $ribbon-out-size solid darken($ribbon-color, 10%);
   }
+
   &__label {
     display: block;
     position: absolute;

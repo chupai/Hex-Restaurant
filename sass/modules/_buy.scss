@@ -21,12 +21,18 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 9999;
     @include content-center;
-    border-radius: 50%;
-    background-color: $success;
-    @include size(16px);
     color: white;
     font-size: $lsp-b;
     font-family: $Roboto;
+    &::after {
+      content: '';
+      @include container-center;
+      z-index: -1;
+      border-radius: 50%;
+      background-color: $success;
+      @include size(18px);
+    }
   }
 }

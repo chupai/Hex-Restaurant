@@ -21,15 +21,19 @@ $(document).ready(function() {
   // 固定導覽列 end
 
   // 至頂按鈕
-  $('.js-e-backtop-btn').on('click', function() {
+  const backtopBtn = $('.js-e-backtop-btn')
+
+  backtopBtn.hide()
+
+  backtopBtn.on('click', function() {
     $('html,body').animate({ scrollTop: 0 }, 'slow')
     return false
   })
   $(window).scroll(function() {
     if ($(this).scrollTop() > 400) {
-      $('.js-e-backtop-btn').fadeIn()
+      backtopBtn.fadeIn()
     } else {
-      $('.js-e-backtop-btn').fadeOut()
+      backtopBtn.fadeOut()
     }
   })
   // 至頂按鈕 end

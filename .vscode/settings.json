@@ -12,5 +12,5 @@
   "prettier.trailingComma": "es5",
   // 縮排空幾格
   "prettier.tabWidth": 2,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }

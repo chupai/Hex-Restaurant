@@ -4728,12 +4728,12 @@ html {
   color: white;
 }
 
-.m-carts-menu__link:active, .m-carts-menu__link.is--active {
+.m-carts-menu__link:active, .m-carts-menu__link.is_active {
   background-color: #3d1101;
   color: white;
 }
 
-.m-carts-menu__link.is--disabled {
+.m-carts-menu__link.is_disabled {
   opacity: 0.6;
   pointer-events: none;
 }

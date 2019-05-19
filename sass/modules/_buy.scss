@@ -19,17 +19,18 @@
   &__number {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: pxTorem(-5px);
+    right: pxTorem(5px);
     z-index: 9999;
-    @include content-center;
     color: white;
     font-size: $lsp-b;
+    font-weight: $font-weight-medium;
     &::after {
       content: '';
       @include container-center;
       z-index: -1;
       border-radius: 50%;
+      border: 1px solid white;
       background-color: $success;
       @include size(18px);
     }

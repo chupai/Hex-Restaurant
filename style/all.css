@@ -4775,20 +4775,12 @@ html {
 .m-buy__number {
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -0.3125rem;
+  right: 0.3125rem;
   z-index: 9999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
   font-size: 0.08rem;
+  font-weight: 500;
 }
 
 .m-buy__number::after {
@@ -4800,6 +4792,7 @@ html {
           transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 50%;
+  border: 1px solid white;
   background-color: #ff5e45;
   width: 1.125rem;
   height: 1.125rem;

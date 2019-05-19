@@ -22,12 +22,12 @@
     }
 
     &:active,
-    &.is--active {
+    &.is_active {
       background-color: $primary;
       color: white;
     }
 
-    &.is--disabled {
+    &.is_disabled {
       opacity: 0.6;
       pointer-events: none;
     }

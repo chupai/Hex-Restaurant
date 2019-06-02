@@ -4728,12 +4728,12 @@ html {
   color: white;
 }
 
-.m-carts-menu__link:active, .m-carts-menu__link.is_active {
+.m-carts-menu__link:active, .m-carts-menu__link.is-active {
   background-color: #3d1101;
   color: white;
 }
 
-.m-carts-menu__link.is_disabled {
+.m-carts-menu__link.is-disabled {
   opacity: 0.6;
   pointer-events: none;
 }
@@ -4924,7 +4924,7 @@ html {
   display: flex;
 }
 
-.m-navbar__list.is_activ {
+.m-navbar__list.is-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -5118,12 +5118,12 @@ html {
           transform-origin: calc(0% + 2px) center;
 }
 
-.m-navbar__button.is_active .m-navbar__button-open {
+.m-navbar__button.is-active .m-navbar__button-open {
   visibility: hidden;
   opacity: 0;
 }
 
-.m-navbar__button.is_active .m-navbar__button-close {
+.m-navbar__button.is-active .m-navbar__button-close {
   visibility: visible;
   opacity: 1;
 }
@@ -5136,7 +5136,7 @@ html {
   z-index: 999;
 }
 
-.m-navbar.is_fix_top {
+.m-navbar.is-fixtop {
   position: fixed;
   top: 0;
   right: 0;

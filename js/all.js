@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // 導覽列按鈕
   $('.js-m-navbar__button').on('click', function(e) {
-    $('.js-m-navbar__button').toggleClass('is_active')
-    $('.js-m-navbar__list').toggleClass('is_activ')
+    $('.js-m-navbar__button').toggleClass('is-active')
+    $('.js-m-navbar__list').toggleClass('is-active')
     e.preventDefault()
   })
   // 導覽列按鈕 end
@@ -13,9 +13,9 @@ $(document).ready(function() {
 
   $(window).on('load scroll resize', function() {
     if ($(window).scrollTop() > menuTop) {
-      setFixed.addClass('is_fix_top')
+      setFixed.addClass('is-fixtop')
     } else {
-      setFixed.removeClass('is_fix_top')
+      setFixed.removeClass('is-fixtop')
     }
   })
   // 固定導覽列 end
